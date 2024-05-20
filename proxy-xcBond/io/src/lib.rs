@@ -1,14 +1,33 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+#![no_std]
+
+use gmeta::{InOut, In, Metadata};
+use gstd::{prelude::*, ActorId};
+
+pub struct ProxyMetadata;
+
+impl Metadata for ProxyMetadata {
+  type Init = In<ActorId>;
+  type Handle = InOut<Action, Event>;
+  type Others = ();
+  type Reply = ();
+  type Signal = ();
+  type State = ();
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+#[derive(TypeInfo, Decode, Encode)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
+pub enum Action {
+  BuyTokens(u64),
+  
 }
+
+
+#[derive(TypeInfo, Decode, Encode)]
+#[codec(crate = gstd::codec)]
+#[scale_info(crate = gstd::scale_info)]
+pub enum Event{
+  TokensBought(u64), 
+  MessageSent,
+}
+
