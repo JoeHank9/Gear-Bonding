@@ -1,0 +1,26 @@
+[1m[32m   Compiling[0m proxy-xcBond v0.1.0 (/mnt/d/xcBond/Gear-Bonding/proxy-xcBond)
+[0m[1m[33mwarning[0m[0m[1m: unused variable: `target_program_id`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0m/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/src/lib.rs:16:8[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m16[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m   let target_program_id: ActorId = msg::load().expect("Failed to load target program id");[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_target_program_id`[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+
+[0m[1m[33mwarning[0m[0m[1m: crate `proxy_xcBond` should have a snake case name[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: convert the identifier to snake case: `proxy_xc_bond`[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(non_snake_case)]` on by default[0m
+
+[1m[33mwarning[0m[1m:[0m `proxy-xcBond` (lib) generated 2 warnings
+[1m[32m   Compiling[0m proxy-xcBond-wasm v0.1.0 (/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/release/build/proxy-xcBond-563d137940af0018/out)
+[0m[1m[33mwarning[0m[0m[1m: unused import: `orig_project::*`[0m
+[0m [0m[0m[1m[38;5;12m--> [0m[0msrc/lib.rs:1:20[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m1[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m#![no_std] pub use orig_project::*;[0m
+[0m  [0m[0m[1m[38;5;12m| [0m[0m                   [0m[0m[1m[33m^^^^^^^^^^^^^^^[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+
+[1m[33mwarning[0m[1m:[0m `proxy-xcBond-wasm` (lib) generated 2 warnings (1 duplicate) (run `cargo fix --lib -p proxy-xcBond-wasm` to apply 1 suggestion)
+[1m[32m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 20.83s

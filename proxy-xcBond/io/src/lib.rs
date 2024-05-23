@@ -18,7 +18,11 @@ impl Metadata for ProxyMetadata {
 #[codec(crate = gstd::codec)]
 #[scale_info(crate = gstd::scale_info)]
 pub enum Action {
-  BuyTokens(u64),
+  BuyTokens{
+    amount: u64,
+    bonding_program_id: ActorId,
+  },
+  SetBondingProgram(ActorId),
   
 }
 

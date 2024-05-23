@@ -1,0 +1,1 @@
+/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/release/libproxy_xcBond.rlib: /mnt/d/xcBond/Gear-Bonding/proxy-xcBond/build.rs /mnt/d/xcBond/Gear-Bonding/proxy-xcBond/io/src/lib.rs /mnt/d/xcBond/Gear-Bonding/proxy-xcBond/src/lib.rs /mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/wasm-projects/release/wasm32-unknown-unknown/release/proxy_xcBond.stamp

@@ -1,0 +1,13 @@
+/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/wasm-projects/release/release/deps/libgcore-7477db3257b10a69.rmeta: /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/lib.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/errors.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/exec.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/msg.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/prog.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/general.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/utils.rs
+
+/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/wasm-projects/release/release/deps/libgcore-7477db3257b10a69.rlib: /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/lib.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/errors.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/exec.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/msg.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/prog.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/general.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/utils.rs
+
+/mnt/d/xcBond/Gear-Bonding/proxy-xcBond/target/wasm-projects/release/release/deps/gcore-7477db3257b10a69.d: /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/lib.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/errors.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/exec.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/msg.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/prog.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/general.rs /home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/utils.rs
+
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/lib.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/errors.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/exec.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/msg.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/prog.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/general.rs:
+/home/user/.cargo/git/checkouts/gear-bdc2b7d48ef3acbd/c8c09fc/gcore/src/utils.rs:

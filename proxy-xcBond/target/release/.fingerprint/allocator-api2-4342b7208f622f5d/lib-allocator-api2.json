@@ -1,0 +1,1 @@
+{"rustc":1059629350237521597,"features":"[\"alloc\"]","declared_features":"","target":1230291212847032201,"profile":385020235239010606,"path":13496219676435467439,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/allocator-api2-4342b7208f622f5d/dep-lib-allocator-api2"}}],"rustflags":[],"metadata":363439559241483613,"config":2202906307356721367,"compile_kind":0}

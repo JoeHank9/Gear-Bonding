@@ -1,6 +1,6 @@
 #![no_std]
 
-use gstd::{msg, ActorId, MessageId};
+use gstd::{prelude::*,msg, ActorId, MessageId};
 use io::{Action, Event};
 
 static mut SESSION: Option<Session> = None;
@@ -16,7 +16,7 @@ extern "C" fn init() {
    let target_program_id: ActorId = msg::load().expect("Failed to load target program id");
    unsafe { 
     SESSION = Some(Session{
-        bonding_program_id = Vec::new(),
+        bonding_program_id : Vec::new(),
         msg_id_to_actor_id: (MessageId::zero(), ActorId::zero()),
     })
    }
@@ -26,9 +26,29 @@ extern "C" fn init() {
 extern  "C" fn handle(){
     let action: Action = msg::load().expect("Unable to decode action");
     let session = unsafe { SESSION.as_mut().expect("Session not initialized") };
-    let msg_id = msg::send(session.target_program_id, action, 0).expect("error in sending message");
-    session.msg_id_to_actor_id = (msg_id, msg::source());
-    msg::reply(Event::MessageSent, 0).expect("Unable to send reply");
+
+    match action {
+      Action::BuyTokens { amount, bonding_program_id } => {
+
+        //send a message to the bonding program
+        let msg_id = msg::send(bonding_program_id, amount, 0).expect("error in sending message");
+
+        //respond to the user with the message id
+        session.msg_id_to_actor_id = (msg_id, msg::source());
+        msg::reply(Event::MessageSent, 0).expect("Unable to send reply");
+          // Handle BuyTokens action here
+          // println!("Buying {} tokens with bonding program id {}", amount, bonding_program_id);
+      }
+      Action::SetBondingProgram(id) => {
+          // Handle SetBondingProgram action here
+          session.bonding_program_id.push(id);
+
+          msg::reply(Event::MessageSent, 0).expect("Unable to send reply");
+          // println!("Setting bonding program to id {}", id);
+      }
+  }
+   
+   
 }
 
 #[no_mangle]
