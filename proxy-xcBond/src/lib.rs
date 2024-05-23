@@ -6,7 +6,7 @@ use io::{Action, Event};
 static mut SESSION: Option<Session> = None;
 
 struct Session{
-    bonding_program_id: ActorId, // smart program del bonding variable y muliple para muchos proyectos
+    bonding_program_id: Vec<ActorId>, // smart program del bonding variable y muliple para muchos proyectos
     msg_id_to_actor_id: (MessageId, ActorId), //el ide del mensaje k esta mandando el usuario y el actorID del usuario
 }
 
@@ -16,7 +16,7 @@ extern "C" fn init() {
    let target_program_id: ActorId = msg::load().expect("Failed to load target program id");
    unsafe { 
     SESSION = Some(Session{
-        bonding_program_id,
+        bonding_program_id = Vec::new(),
         msg_id_to_actor_id: (MessageId::zero(), ActorId::zero()),
     })
    }
